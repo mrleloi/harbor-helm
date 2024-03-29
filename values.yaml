@@ -338,7 +338,7 @@ persistence:
       subPath: ""
       accessModes:
         - ReadWriteOnce
-      size: 5Gi
+      size: 50Gi
       annotations: {}
       selector: {}
     ## @param persistence.persistentVolumeClaim.jobservice.existingClaim Name of an existing PVC to use
