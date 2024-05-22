@@ -891,8 +891,7 @@ nginx:
   ## @param nginx.nodeSelector NGINX Node labels for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
   ##
-  nodeSelector:
-    dedicated: master
+  nodeSelector: {}
   ## @param nginx.tolerations NGINX Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
@@ -1224,8 +1223,7 @@ portal:
   ## @param portal.nodeSelector Harbor Portal Node labels for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
   ##
-  nodeSelector:
-    dedicated: master
+  nodeSelector: {}
   ## @param portal.tolerations Harbor Portal Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
@@ -1630,8 +1628,7 @@ core:
   ## @param core.nodeSelector Harbor Core Node labels for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
   ##
-  nodeSelector:
-    dedicated: master
+  nodeSelector: {}
   ## @param core.tolerations Harbor Core Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
@@ -2001,8 +1998,7 @@ jobservice:
   ## @param jobservice.nodeSelector Harbor Jobservice Node labels for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
   ##
-  nodeSelector:
-    dedicated: master
+  nodeSelector: {}
   ## @param jobservice.tolerations Harbor Jobservice Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
@@ -2253,8 +2249,7 @@ registry:
   ## @param registry.nodeSelector Harbor Registry Node labels for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
   ##
-  nodeSelector:
-    dedicated: master
+  nodeSelector: {}
   ## @param registry.tolerations Harbor Registry Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
@@ -3325,8 +3320,7 @@ exporter:
   ## @param exporter.nodeSelector Harbor Exporter Node labels for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
   ##
-  nodeSelector:
-    dedicated: master
+  nodeSelector: {}
   ## @param exporter.tolerations Harbor Exporter Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
