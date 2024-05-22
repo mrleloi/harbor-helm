@@ -2971,8 +2971,7 @@ trivy:
   ## @param trivy.nodeSelector Trivy Node labels for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
   ##
-  nodeSelector:
-    dedicated: master
+  nodeSelector: {}
   ## @param trivy.tolerations Trivy Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
