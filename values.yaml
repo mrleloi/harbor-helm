@@ -337,7 +337,7 @@ persistence:
       storageClass: "longhorn"
       subPath: ""
       accessModes:
-        - ReadWriteOnce
+        - ReadWriteMany
       size: 50Gi
       annotations: {}
       selector: {}
@@ -355,7 +355,7 @@ persistence:
       storageClass: "longhorn"
       subPath: ""
       accessModes:
-        - ReadWriteOnce
+        - ReadWriteMany
       size: 1Gi
       annotations: {}
       selector: {}
@@ -369,7 +369,7 @@ persistence:
     trivy:
       storageClass: "longhorn"
       accessModes:
-        - ReadWriteOnce
+        - ReadWriteMany
       size: 5Gi
       annotations: {}
       selector: {}
