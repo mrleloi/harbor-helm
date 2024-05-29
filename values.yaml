@@ -1436,23 +1436,22 @@ core:
   args: []
   ## @param core.extraEnvVars Array with extra environment variables to add Harbor Core pods
   ##
-  extraEnvVars:
-    - name: configOverwriteJson
-      value: |
-        {
-          "auth_mode": "oidc_auth",
-          "oidc_name": "keycloak",
-          "oidc_endpoint": "https://keycloak.baityapp.online/realms/baityapp",
-          "oidc_groups_claim": "groups",
-          "oidc_admin_group": "harbor-administrators",
-          "oidc_client_id": "harbor",
-          "oidc_client_secret": "FGTCE6aQd3xCwSaQzf7G4nTwnBvmJEj9",
-          "oidc_scope": "openid,email,profile,offline_access",
-          "oidc_verify_cert": "false",
-          "oidc_auto_onboard": "true",
-          "oidc_user_claim": "preferred_username"
-        }
-
+  extraEnvVars: []
+    #- name: configOverwriteJson
+    #  value: |
+    #    {
+    #      "auth_mode": "oidc_auth",
+    #      "oidc_name": "keycloak",
+    #      "oidc_endpoint": "https://keycloak.baityapp.online/realms/baityapp",
+    #      "oidc_groups_claim": "groups",
+    #      "oidc_admin_group": "harbor-administrators",
+    #      "oidc_client_id": "harbor",
+    #      "oidc_client_secret": "FGTCE6aQd3xCwSaQzf7G4nTwnBvmJEj9",
+    #      "oidc_scope": "openid,email,profile,offline_access",
+    #      "oidc_verify_cert": "false",
+    #      "oidc_auto_onboard": "true",
+    #      "oidc_user_claim": "preferred_username"
+    #    }
   ## @param core.extraEnvVarsCM ConfigMap containing extra environment variables for Harbor Core pods
   ##
   extraEnvVarsCM: ""
